@@ -32,6 +32,13 @@ InstrumentFamilyView.prototype.populateView = function (familyData) {
   const famDescription = document.createElement('p');
   familyName.appendChild(famDescription)
   famDescription.textContent = familyData.description;
+  const ul = document.createElement('ul')
+  familyDetail.appendChild(ul)
+    for(let instrument of familyData.instruments){
+      const li = document.createElement('li')
+      ul.appendChild(li)
+      li.textContent = instrument 
+    }
   return familyDetail
 };
 
