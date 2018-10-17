@@ -5,6 +5,7 @@ const SelectorView = function(select){
 };
 
 SelectorView.prototype.bindEvents = function () {
+
   PubSub.subscribe('InstrumentFamilies:familyList', (event)=>{
     const familyNames = event.detail;
     console.log('selectview family names', familyNames);

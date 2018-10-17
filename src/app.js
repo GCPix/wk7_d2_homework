@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const instrumentFamilies = new InstrumentFamilies(InstrumentData)
   instrumentFamilies.bindEvents();
 
-  const resultPosition = document.querySelector('.familyInfo')
   const instrumentFamilyView = new InstrumentFamilyView()
   instrumentFamilyView.bindEvents();
 
